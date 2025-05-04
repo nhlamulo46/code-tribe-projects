@@ -195,6 +195,12 @@ section {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 5px;
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+=======
 }
 
 .form-group {
@@ -224,6 +230,33 @@ textarea.form-control {
 
 .btn-primary:hover {
   background-color: #0056b3;
+}
+
+/* Social Links Styles */
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 24px;
+  }
+
+  .container {
+      padding: 10px;
+  }
 }
 
 /* Social Links Styles */
