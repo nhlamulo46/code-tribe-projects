@@ -1,287 +1,150 @@
-/* Resetting default margin and padding */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%)
+}
+
 * {
-  margin: 0;
-  padding: 0;
-}
-
-/* Body styles */
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* Header styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: pink; /* Pink background for header */
-}
-
-/* Logo styles */
-.logo img {
-  max-width: 100px;
-}
-
-/* Navigation styles */
-nav ul {
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: pink;
-  font-weight: bold;
-}
-
-/* Video container styles */
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden;
-  background-color: pink; /* Pink background for video */
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Main section styles */
-.main {
-  display: flex;
-  align-items: center;
-  padding: 50px;
-}
-
-/* Bio styles */
-.bio {
-  flex: 1;
-}
-
-.bio h1 {
-  margin-bottom: 20px;
-}
-
-/* Image styles */
-.image {
-  flex: 1;
-}
-
-.image img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Footer styles */
-footer {
-  background-color: pink; /* Pink background for footer */
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.contact-info {
-  text-align: right;
-  position: left;
-}
-
-/* Social links styles */
-.social-links {
-  list-style-type: none;
-  margin-right: auto;
-}
-
-.social-links li {
-  display: inline;
-  margin-right: 10px;
-}
-
-/* Map styles */
-.map {
-  flex: 1;
-  text-align: right;
-}
-
-#mapFrame {
-  position: right;
-  bottom: 0;
-  right: 95px;
-  margin-left: 88%;
-  width: 10%;
-  height: 70%;
-  border: none; 
-  z-index: 1;
-}
-/* Header styles */
-header {
-  background-color: #f9f9f9;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Main section styles */
-.main {
-  padding: 20px;
-}
-
-/* Bio styles */
-.bio {
-  margin-top: 20px;
-}
-
-.bio h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.bio ul {
-  list-style: none;
-  padding: 0;
-}
-
-.bio ul li {
-  margin-bottom: 10px;
-}
-
-.bio ul li strong {
-  font-weight: bold;
-}
-
-.bio p {
-  margin-top: 20px;
-  font-size: 16px;
-}
-
-/* Additional styling for section headings */
-h3 {
-  font-size: 20px;
-  margin-top: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 500, 800;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: "Figtree", sans-serif;
+    background-color: var(--yellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 600px;
+    width: 400px;
+    box-shadow: 10px 10px;
 }
 
-header, footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
+header {
+    margin-top: 30px;
 }
 
-section {
-  margin-bottom: 20px;
+header>#learning {
+    font-weight: 800;
+    background-color: var(--yellow);
+    width: 6rem;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-/* Contact Form Styles */
-.contact-form {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 5px;
-
-.form-group {
-  margin-bottom: 20px;
+header>img {
+    border-radius: 10px;
 }
 
-=======
+p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
 }
 
-.form-group {
-  margin-bottom: 20px;
+main>h1 {
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    text-align: start;
+    font-size: 1.7rem;
 }
 
-.form-control {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+#main-p {
+    color: var(--grey);
+    text-align: start;
+    line-height: 1.5rem;
+    letter-spacing: 0.03rem;
+    margin: 25px;
+    font-size: 16px;
 }
 
-textarea.form-control {
-  resize: vertical;
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+
 }
 
-.btn-primary {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+footer>img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 60px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+
 }
 
-.btn-primary:hover {
-  background-color: #0056b3;
+footer>#greg {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 800;
 }
 
-/* Social Links Styles */
-.social-links {
-  list-style: none;
-  padding: 0;
+@media (max-width: 375px) {
+    .container {
+        width: 250px;
+    }
+
+    header>img {
+        width: 200px;
+    }
 }
 
-.social-links li {
-  display: inline-block;
-  margin-right: 10px;
+@media (min-width: 376px) and (max-width:768px) {
+    .container {
+        width: 300px;
+        margin: 30px;
+        padding: 10px;
+    }
+
+    header>img {
+        width: 250px;
+    }
 }
 
-.social-links a {
-  color: #fff;
-  text-decoration: none;
+@media (min-width:769px) and (max-width:1024px) {
+    .container {
+        width: 350px;
+    }
+
+    header>img {
+        width: 300px;
+    }
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  header h1 {
-      font-size: 24px;
-  }
+@media (min-width:1025px) and (max-width:1440px) {
+    .container {
+        width: 400px;
+    }
 
-  .container {
-      padding: 10px;
-  }
-}
-
-/* Social Links Styles */
-.social-links {
-  list-style: none;
-  padding: 0;
-}
-
-.social-links li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-links a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  header h1 {
-      font-size: 24px;
-  }
-
-  .container {
-      padding: 10px;
-  }
+    header>img {
+        width: 350px;
+    }
 }
