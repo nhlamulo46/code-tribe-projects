@@ -34,7 +34,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: pink;
   font-weight: bold;
 }
 
@@ -121,18 +121,6 @@ footer {
   border: none; 
   z-index: 1;
 }
-/* Bio styles */
-.bio {
-  margin-top: 20px;
-}
-
-.bio p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  text-align: justify;
-}
-
 /* Header styles */
 header {
   background-color: #f9f9f9;
@@ -143,28 +131,124 @@ header {
 /* Main section styles */
 .main {
   padding: 20px;
-  text-align: center;
 }
 
-/* Table styles */
-table {
-  width: 100%;
-  border-collapse: collapse;
+/* Bio styles */
+.bio {
   margin-top: 20px;
 }
 
-table th,
-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
+.bio h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-table th {
-  background-color: #f2f2f2;
+.bio ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bio ul li {
+  margin-bottom: 10px;
+}
+
+.bio ul li strong {
+  font-weight: bold;
+}
+
+.bio p {
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 /* Additional styling for section headings */
-h2 {
+h3 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Social Links Styles */
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 24px;
+  }
+
+  .container {
+      padding: 10px;
+  }
 }
